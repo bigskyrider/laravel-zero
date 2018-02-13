@@ -14,9 +14,15 @@
             "email": "enunomaduro@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type":"git",
+            "path":"https://github.com/bigskyrider/framework"
+        }
+    ],
     "require": {
         "php": ">=7.2",
-        "laravel-zero/framework": "4.0.*"
+        "bigskyrider/framework": "4.0.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
