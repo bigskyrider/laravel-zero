@@ -4,6 +4,102 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [5.6.19] - 2018-05-28
+### Fixes
+- Create project cmd.
+
+## [5.6.18] - 2018-05-27
+### Adds
+- Method injection on handle method in command classes. [#242](https://github.com/laravel-zero/framework/pull/242)
+
+## [5.6.17] - 2018-05-08
+### Adds
+- Console Dusk component.
+
+### Changes
+- Use semver caret operator on composer.
+- Updates Renamer and Builder commands descriptions.
+
+## [5.6.16] - 2018-03-26
+### Fixed
+- Usage of package auto-discovery in unwanted cases.
+
+## [5.6.15] - 2018-03-26
+### Fixed
+- Revert: Fixes the register of auto discovery service providers.
+
+## [5.6.14] - 2018-03-26
+### Fixed
+- Fixes the register of auto discovery service providers.
+
+## [5.6.13] - 2018-03-25
+### Fixed
+- Registers console commands if component is available.
+
+## [5.6.12] - 2018-03-25
+### Fixed
+- Fixes console stub identation. [#235](https://github.com/laravel-zero/framework/pull/235)
+
+## [5.6.11] - 2018-03-21
+### Removed
+- Package `symfony/thanks`. [#138](https://github.com/laravel-zero/laravel-zero/pull/138)
+
+## [5.6.9] - 2018-03-07
+### Adds
+- Alternative component installer on windows.
+
+## [5.6.8] - 2018-03-07
+### Fixes
+- Create project on Windows.
+
+## [5.6.7] - 2018-03-04
+### Fixes
+- `file in use` error on Windows. [#222](https://github.com/laravel-zero/framework/pull/222)
+
+## [5.6.6] - 2018-03-04
+### Added
+- `app:build` command now haves the option `with-dev` to compile with dev dependencies.
+
+## [5.6.5] - 2018-03-04
+### Fixes
+- Fixes unwanted first line appearance on compiled file.
+
+## [5.6.4] - 2018-03-03
+### Changes
+- Improves `app:build` command. [#211](https://github.com/laravel-zero/framework/pull/211)
+
+## [5.6.3] - 2018-02-20
+### Fixed
+- Phpdocs
+
+## [5.6.2] - 2018-02-19
+### Fixed
+- Fixes environment detector
+
+## [5.6.1] - 2018-02-18
+### Fixed
+- Composer.json framework value.
+
+## [5.6.0] - 2018-02-18
+### Added
+- Added `config/commands.php` to hold the ListCommand configuration.
+- Added `bootstrap/cache` folder to hold application services cache.
+- Core: Added `menu` method on base command class.
+- Core: Collision v2
+
+### Changed
+- On tests, the `Integration` folder got renamed to `Feature`.
+- The value version on `config/app.php` should be updated to `app('git.version')`.
+
+### Removed
+- `bootstrap/autoload` and `bootstrap/init` got removed.
+- App config `with-scheduler` is no longer available. You should use `config/commands.php` for it.
+- App config `default-command` is no longer available. You should use `config/commands.php` for it.
+- App config `commands-paths` is no longer available. You should use `config/commands.php` for it.
+- App config `commandss` is no longer available. You should use `config/commands.php` for it.
+- Database config `with-migrations` is no longer available. You should use `config/commands.php` for it.
+- Database config `with-seeds` is no longer available. You should use `config/commands.php` for it.
+
 ## [4.0.26] - 2018-02-01
 ### Fixes
 - Core: Fixes usage of facades in service providers.

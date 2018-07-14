@@ -1,8 +1,9 @@
 {
-    "name": "bigskyrider/laravel-zero",
-    "description": "Laravel Zero provides the perfect starting point for your next Laravel Console Application.",
-    "keywords": ["framework", "laravel", "console", "zero"],
-    "homepage": "http://laravel-zero.com",
+    "name": "digital-drifter/laravel-zero",
+    "description": "The Laravel Zero Framework.",
+    "keywords": ["framework", "laravel", "laravel zero", "console", "cli"],
+    "homepage": "https://laravel-zero.com",
+    "type": "project",
     "license": "MIT",
     "support": {
         "issues": "https://github.com/laravel-zero/laravel-zero/issues",
@@ -10,8 +11,8 @@
     },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Digital Drifter",
+            "email": "whydoesmycodework@gmail.com"
         }
     ],
     "repositories": [
@@ -22,13 +23,10 @@
     ],
     "require": {
         "php": ">=7.2",
-        "bigskyrider/framework": "4.0.*"
+        "digital-drifter/framework": "5.6.*"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require-dev": {
-        "phpunit/phpunit": "~7.0",
-        "symfony/thanks": "^1.0"
+        "phpunit/phpunit": "7.2.*"
     },
     "autoload": {
         "psr-4": {
@@ -42,12 +40,18 @@
     },
     "config": {
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "ext-posix": "0"
+        }
     },
     "scripts": {
         "post-create-project-cmd": [
-            "php application app:rename"
+            "@php application app:rename"
         ]
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "bin": ["application"]
 }

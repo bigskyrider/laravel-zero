@@ -5,7 +5,6 @@
 <p align="center">
   <a href="https://travis-ci.org/laravel-zero/framework"><img src="https://img.shields.io/travis/laravel-zero/framework/stable.svg" alt="Build Status"></img></a>
   <a href="https://scrutinizer-ci.com/g/laravel-zero/framework"><img src="https://img.shields.io/scrutinizer/g/laravel-zero/framework.svg" alt="Quality Score"></img></a>
-  <a href="https://scrutinizer-ci.com/g/laravel-zero/framework"><img src="https://img.shields.io/scrutinizer/coverage/g/laravel-zero/framework.svg" alt="Coverage"></img></a>
   <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://poser.pugx.org/laravel-zero/framework/d/total.svg" alt="Total Downloads"></a>
   <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://poser.pugx.org/laravel-zero/framework/v/stable.svg" alt="Latest Stable Version"></a>
   <a href="https://packagist.org/packages/laravel-zero/framework"><img src="https://poser.pugx.org/laravel-zero/framework/license.svg" alt="License"></a>
@@ -16,10 +15,11 @@
 Laravel Zero was created by, and is maintained by [Nuno Maduro](https://github.com/nunomaduro), and is a micro-framework that provides an elegant starting point for your console application. It is an **unofficial** and customized version of Laravel optimized for building command-line applications.
 
 - Built on top of the [Laravel](https://laravel.com) components.
-- Optional installation of [Eloquent](http://laravel-zero.com/#/?id=database).
-- Auto detects commands and supports [desktop notifications](https://github.com/nunomaduro/laravel-desktop-notifier) on Linux, Windows & MacOS.
-- Ships with a [Scheduler](http://laravel-zero.com/#/?id=scheduler) and a [Standalone Compiler](http://laravel-zero.com/#/?id=building-a-standalone-application).
-- Integration with [Collision](https://github.com/nunomaduro/collision) - A Detailed & intuitive error handler.
+- Optional installation of Laravel [Eloquent](http://laravel-zero.com/#/?id=database), Laravel [Logging](http://laravel-zero.com/#/?id=log) and many others.
+- Supports interactive [menus](http://laravel-zero.com/#/?id=interactive-menus) and [desktop notifications](http://laravel-zero.com/#/?id=desktop-notifications) on Linux, Windows & MacOS.
+- Ships with a [Scheduler](http://laravel-zero.com/#/?id=scheduler) and a [Standalone Compiler](http://laravel-zero.com/#/?id=build-a-standalone-application).
+- Integration with [Collision](https://github.com/nunomaduro/collision) - Beautiful error reporting
+
 ------
 
 ## Documentation
